@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*BARRA NAV*/
+
+.nav-bg{
+    background-image: url("../images/retina_wood.png");
+    background-attachment: fixed;
+    }
+
+.nav-link-mod{
+    text-decoration: none;
+    display: block;
+    padding: 3rem 3rem;
+    color: nth($color, 2 );
+    letter-spacing: 0.5rem;
+    font-size: 18px;
+    &:hover{
+    color: nth($color, 3)}}
+
+
+@media (min-width: 992px){
+.navbar-expand-lg, .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;}
+}
+
+/*--Logo--*/
+.navbar-brand-mod{
+    text-decoration: none;
+    display: block;
+    padding: 3rem;
+    font-weight: 500;
+    color: nth($color, 2 );
+    letter-spacing: 0.5rem;
+    font-size: 28px;
+    text-decoration: none;
+    &:hover{
+        color: nth($color, 3);}}                  
+
+
+    .container-btn{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+
+/*GALERÍA*/
+.slide1{
+    background-image: url("../images/slide1.jpg");}
+.slide2{
+    background-image: url("../images/slide2.jpg");}
+.slide3{
+    background-image: url("../images/slide3.jpg");}
+.slide4{
+    background-image: url("../images/slide4.jpg");}
+.slide5{
+    background-image: url("../images/slide5.jpg");}
+.slide6{
+    background-image: url("../images/slide6.jpg");}
+
+.slider{
+	display:flex;
+	background:#000;
+	.slide{
+		height:100vh;
+		position:relative;
+		z-index:10;
+		border:solid #fff;
+		border-width:1px;
+		background-size:cover;
+		background-position:center center;
+		opacity:0.25;
+		width:30%;
+		transition:width 0.8s ease, opacity 0.5s ease;
+		&:hover{
+			width:250%;
+			opacity:1;}
+        }
+    }
+
+/*TEXTO*/
+.nosotros{
+    padding: 12%;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    background-image: url("../images/living.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;     
+    }
+    
+/*SECCIÓN MEDIOS DE PAGO Y ENVÍOS*/
+.bg-pagosyenvios{
+    background-color: nth($color, 1);
+    padding: 5%;    
+}
+
+.icono{
+    font-size: 60px;
+    color: nth($color,2);
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.texto-box{
+    font-size: 30px;
+    font-weight: 600;
+    color: nth($color, 2)
+}
+
+/*SECCIÓN PRODUCTOS*/
+
+.bg-madera{
+    background-image: url("../images/retina_wood.png");
+    background-attachment: fixed;
+}
+
+/*CATÁLOGO*/
+.card-mod {
+    margin: 7%;
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 1px;
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: 0.375rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height:35rem;
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+
+
+/*BOTONES*/
+.btn-carrito{
+    color: white;
+    font-size: 36px;
+    background-color: nth($color, 3 );
+    border: none;
+    width: 300px;
+    height: 80px;
+    border-radius: 10px;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.btn-borrar{
+    background-color: nth($color,3);
+    padding: 2%;
+   border: none;
+   border-radius: 10px;
+   color: white;
+}
+
+
+.btn-Add{
+    background-color: nth($color,3);
+    padding: 5%;
+   border: none;
+   display: block;
+   margin: auto;
+   border-radius: 10px;
+   color: white;
+   font-weight: 500;
+   &:hover{
+    transform: scale(1.1);
+}
+}
+   
+.swal2-styled.swal2-confirm.swalBtnColor {
+    background-color: #86cad6
+  }
+
+.btn-calc{
+    background-color: nth($color,3);
+    padding: 2%;
+   border: none;
+   font-size: 22px;
+   border-radius: 10px;
+   color: white;
+   &:hover{
+    transform: scale(1.1);
+}
+
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-vaciar{
+    background-color: nth($color,3);
+   width: 6rem;
+   height: 3rem;
+   border: none;
+   display: block;
+   margin: auto;
+   border-radius: 10px;
+   color: white;
+   font-weight: 500;
+   letter-spacing: 0.2rem;
+   margin: 5%;
+   &:hover{
+    transform: scale(1.1);
+}
+
+}
+
+.btn-comprar{
+    background-color: nth($color,3);
+   width: 6rem;
+   height: 3rem;
+   border: none;
+   border-radius: 10px;
+   color: white;
+   font-weight: 500;
+   letter-spacing: 0.2rem;
+   margin: 5%;
+   text-decoration: none;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   padding: 2%;
+   &:hover{
+    color: nth($color,3);
+    transform: scale(1.1);
+   }
+}
+
+
+#lista{
+    margin: 5%;
+    list-style: none;
+    color: nth($color, 1);
+   
+}
+/*FORMULARIO DE PAGO*/
+.wrapper {
+    background-image: url("../images/back1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;}
+
+.container-form {
+    width: 65%;
+    padding: 5% 10%;
+}
+
+form {
+    width: 100%;
+    input {
+        width: 100%;
+        min-height: 25px;
+        border: 0;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        margin-top: 5px;
+        border-radius: 4px;
+    }
+    label {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+     div {
+        width: 45%;}
+    }
+
+.address-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width:45%;
+    }
+}
+
+.cc-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 45%;
+    }
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    button {
+        margin: 5%;
+        height: 30px;
+        width: 40%;
+        border: 0;
+        border-radius: .3rem;
+        letter-spacing: 2px;
+
+    }
+}
+
+.select{
+    margin:5%;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    
+}
+option{
+    text-align: center;
+}
+
+@media (max-width: 736px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .btns {
+        align-items: center;
+
+        button {
+            width: 50%;
+        }
+    }
+
+
+    .name, 
+    .address-info,
+    .cc-info {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+
+        div {
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    .street,
+    .cc-num {
+        text-align: center;
+    }
+
+    input {
+        margin: 5px 0;
+        min-height: 30px;
+    }}
+}
+
+
+.form-head{
+    margin: 5%;
+    color: nth($color, 1);
+}
+
+.select{
+    margin:5%;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    
+}
+option{
+    text-align: center;
+}
+
+/*FOOTER*/
+
+
+.bg-footer{
+  background-color: nth($color, 1);
+  color: nth($color, 2 );
+  font-size: 16px}
+  
+.text-link{
+  text-decoration: none;
+  color: nth($color, 2 );
+  &:hover{
+    color: rgb(186, 202, 200)}}
+
+.footer-title{
+  font-size: 16px;
+  font-weight:300;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;}
+
+.iframe-map{
+  width: 80%;
+  height: 100%;} 
+
+.form-nl{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;}
+  
+.form-control{
+    max-width: 200px;}
+
+.btn-color{
+    background-color: nth($color,3);
+    color: white;
+}
+
+.copy{
+    text-align: center;
+    font-size: 12px}
+    
