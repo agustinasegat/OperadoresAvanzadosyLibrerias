@@ -10,7 +10,7 @@ const btnVaciar = document.querySelector('#boton-vaciar');
 const LocalStorage = localStorage;
 
 
-//alerts
+//Alerts
 function msjSwal(mensaje){
   //USO DE OPERADOR AND PARA INDICAR CON UN ALERT QUE EL CARRITO ESTÁ VACÍO
     Swal.fire({
@@ -258,7 +258,7 @@ conEnvio.addEventListener("click", ()=>{
       error () ;}}
 
 
-     //OPERADOR AND Va a calcular el precio de envío siempre y cuando haya productos en Carrito, caso contrario va a dar un mensaje
+     //USO DE OPERADOR TERNARIO: Va a calcular el precio de envío siempre y cuando haya productos en Carrito, caso contrario va a dar un mensaje
      (precio !=0) ? CostoporZona() : msjSwal("Agregá productos al Carrito")
     
   
